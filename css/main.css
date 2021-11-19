@@ -1,0 +1,245 @@
+:root {
+    --main-color: #111111;
+    --secand-color: #e21d26
+}
+
+body {
+    background: var(--main-color);
+    font-family: 'Cairo' !important;
+}
+
+.section {
+    padding: 50px 0
+}
+
+.main-bg {
+    background-color: var(--main-color);
+}
+
+.secand-bg {
+    background-color: var(--secand-color);
+}
+
+.text-main {
+    color: var(--main-color);
+}
+
+.text-secand {
+    color: var(--secand-color);
+}
+
+/* dark mode style */
+
+.dark-mode span {
+    cursor: pointer;
+}
+
+/* carousel style */
+
+.section-carousel .carousel-control-prev-icon, .section-carousel .carousel-control-next-icon {
+    background-color: var(--secand-color) !important;
+    color: #fff;
+    font-size: 15px;
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    background-size: 26px;
+    text-align: center;
+}
+
+.carousel-indicators li.active {
+    background-color: var(--secand-color)
+}
+
+.section-carousel .carousel-item {
+    position: relative;
+}
+
+.section-carousel .carousel-item::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+    opacity: .6;
+    z-index: 1;
+}
+
+.section-carousel .carousel-item .carousel-item-content {
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    z-index: 2;
+    border-left: 3px solid var(--secand-color);
+    border-radius: 5px;
+    padding: 25px;
+    text-transform: capitalize !important;
+    width: 500px;
+}
+
+.section-carousel .carousel-item .carousel-item-content::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 120px;
+    height: 3px;
+    background-color: var(--secand-color);
+}
+
+.section-carousel .carousel-item .carousel-item-content::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 120px;
+    height: 3px;
+    background-color: var(--secand-color);
+}
+
+.section-carousel .carousel-item .carousel-item-content .tagline, .carousel-item .carousel-item-content .description {
+    color: #ddd
+}
+
+.section-carousel .carousel-item .carousel-item-content .title {
+    color: #fff;
+    font-size: 46px !important;
+    font-weight: bolder;
+    font-family: "cairo" !important;
+    letter-spacing: 2px;
+}
+
+/* section speed time style */
+
+.section-speed-time .speed-card {
+    min-height: 250px;
+    padding: 25px
+}
+
+.section-speed-time .speed-card.first {
+    background: #222222;
+}
+
+.section-speed-time .speed-card.secand {
+    background: var(--secand-color);
+}
+
+.section-speed-time .speed-card.therd {
+    background: #eeeeee;
+}
+
+.card-color {
+    background: #2a2a2a;
+}
+
+/* section about style */
+
+.who {
+    position: relative;
+}
+
+.who:after {
+    content: "";
+    position: absolute;
+    left: 1.2px;
+    bottom: 8px;
+    width: 100%;
+    height: 3px;
+    background: var(--secand-color);
+}
+
+/* section review style */
+
+.reviews-slider .carousel {
+    min-height: 390px !important;
+}
+
+.reviews-slider .carousel-indicators li {
+    background-color: var(--main-color) !important
+}
+
+.reviews-slider .carousel-indicators li.active {
+    background-color: var(--secand-color) !important
+}
+
+/* section training */
+
+.section-training, .section-elevate {
+    background: #0f0f0f !important;
+}
+
+.section-product {
+    background: url('/images/wall-black.jpg') repeat-x left !important;
+    background-size: cover !important;
+}
+
+@media(min-width:968px) {
+    .section-product {
+        padding-top: 110px !important
+    }
+}
+
+.section-training .header {
+    padding-bottom: 120px !important;
+}
+
+.section-training .video {
+    position: relative;
+    height: 350px;
+    width: 90%;
+    background: url('/images/abstract.png') no-repeat top left;
+    background-size: cover;
+}
+
+.section-training .video .image {
+    position: absolute;
+    top: -100px;
+    right: 0
+}
+
+.section-training .serie-card {
+    position: relative;
+}
+
+.section-training .serie-card .image {
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+
+.section-training .serie-card .content {
+    position: absolute;
+    bottom: -10px;
+    width: 100%;
+    border-top: 2px solid #fff;
+}
+
+/* section blog */
+.section-blog .blog-card .image {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.section-blog .blog-card .image .date {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 65px;
+    padding:5px 0 7px;
+    color: #fff;
+    text-align: center;
+    background: var(--secand-color);
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+/* footer */
+
+.social-media .text-secand{
+    transform: ease .4s;
+}
+
+.social-media .text-secand:hover{
+    color:white
+}
