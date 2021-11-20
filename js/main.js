@@ -26,7 +26,7 @@ $(() => {
         checkBtnScroll();
     })
 
-    $('.btn-top,.navbar-brand').click(function (e) {
+    $('.btn-top,.navbar-brand,.logo').click(function (e) {
         e.preventDefault();
         $('html,body').animate({
             scrollTop: 0
