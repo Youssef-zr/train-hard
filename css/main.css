@@ -226,7 +226,7 @@ body {
     bottom: 10px;
     left: 10px;
     width: 65px;
-    padding:5px 0 7px;
+    padding: 5px 0 7px;
     color: #fff;
     text-align: center;
     background: var(--secand-color);
@@ -236,10 +236,30 @@ body {
 
 /* footer */
 
-.social-media .text-secand{
+.social-media .text-secand {
     transform: ease .4s;
 }
 
-.social-media .text-secand:hover{
-    color:white
+.social-media .text-secand:hover {
+    color: white
+}
+
+/* go to top */
+.top {
+    position: fixed;
+    right: 20px;
+    bottom: 25px;
+    background: var(--secand-color);
+    width: 45px;
+    height: 45px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.top .btn-top {
+    color: inherit
 }
