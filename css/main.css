@@ -35,7 +35,6 @@ body {
 }
 
 /* carousel style */
-
 .section-carousel .carousel-control-prev-icon, .section-carousel .carousel-control-next-icon {
     background-color: var(--secand-color) !important;
     color: #fff;
