@@ -36,10 +36,18 @@ $(() => {
     // tooltip
     $('[data-toggle="tooltip"]').tooltip();
 
+    // navigation bar
     let sectionNav = $('.navigation');
 
     $('body').css({
         paddingTop: sectionNav.outerHeight() + 20
+    })
+
+    // open navigation menu
+    $('.navbar-toggler').on('click', function (e) {
+        e.preventDefault();
+        $('.navbar-collapse').slideToggle(300);
+        $('.navbar').toggleClass("border-bottom pb-4 border-2x border-white")
     })
 
     // navigation item scroll click 
