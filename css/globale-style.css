@@ -214,7 +214,7 @@ p {
 
 .navbar-toggler:hover{
     color:#fff;
-    background-color: #ff1d5e !important;
+    background-color: var(--secand-color) !important;
 }
 /* social media links */
 
