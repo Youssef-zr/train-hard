@@ -24,6 +24,18 @@ $(() => {
 
     $(window).on('scroll', function () {
         checkBtnScroll();
+        let navItems = $(".navbar-collapse").find('.nav-item a');
+
+        for (let index = 0; index < navItems.length; index++) {
+            const element = navItems[index];
+            let dataLink = $('.' + $(element).data('link'));
+
+            if ($(this).scrollTop() >= dataLink.offset().top - ($(".navigation").outerHeight() + 30)) {
+                $(element).addClass('active').parent().siblings().find("a").removeClass('active');
+            }
+
+        }
+
     })
 
     $('.btn-top,.navbar-brand,.logo').click(function (e) {
@@ -58,7 +70,7 @@ $(() => {
 
         $link = $(this).find('a');
         $dateLink = $link.data('link');
-        $scrollTop = $dateLink != "home" ? $('.' + $dateLink).offset().top : 0;
+        $scrollTop = $('.' + $dateLink).offset().top;
 
         $link.addClass('active').parent().siblings('li').find('a').removeClass('active');
         $('html,body').animate({

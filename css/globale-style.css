@@ -204,18 +204,27 @@ p {
 }
 
 .navbar-toggler {
-    padding:5px 5px 2px;
+    padding: 5px 5px 2px;
     transition: ease .5s;
 }
 
-.navbar-toggler i{
+.navbar-toggler i {
     margin-top: 2px;
 }
 
-.navbar-toggler:hover{
-    color:#fff;
+.navbar-toggler:hover {
+    color: #fff;
     background-color: var(--secand-color) !important;
 }
+
+.nav-link:not(.active):focus {
+    color: rgba(255, 255, 255, 0.5) !important
+}
+
+/* .nav-link.active:focus{
+    color: #fff !important;
+} */
+
 /* social media links */
 
 .social-media-links .link a {
